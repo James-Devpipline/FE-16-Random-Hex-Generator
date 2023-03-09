@@ -8,7 +8,16 @@ randomHex => #be7380
 
 function randomHexGenerator() {
   const hexCharacters = "ABCDEF1234567890"
+  let hexFinal = ''
+
+  for (let i = 0; i < 6; i++) {
+    hexFinal += hexCharacters[Math.floor(Math.random() * hexCharacters.length)]
+  }
+  // hexFinal.shift('#')
+  console.log(`#${hexFinal}`)
 }
+
+randomHexGenerator()
 
 stri = "ab"
 console.log(stri.length)
