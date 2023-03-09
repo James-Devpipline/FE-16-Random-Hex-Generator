@@ -13,12 +13,7 @@ function randomHexGenerator() {
   for (let i = 0; i < 6; i++) {
     hexFinal += hexCharacters[Math.floor(Math.random() * hexCharacters.length)]
   }
-  // hexFinal.shift('#')
-  console.log(`#${hexFinal}`)
+  return alert(`Your randomly Generated Hex code is: #${hexFinal}`)
 }
 
 randomHexGenerator()
-
-stri = "ab"
-console.log(stri.length)
-console.log(stri[Math.floor(Math.random() * stri.length)])
